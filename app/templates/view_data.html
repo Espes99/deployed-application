@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Blog Posts</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">View Blog Posts</h1>
+            <a href="{{ url_for('add_data') }}" class="button">Add a new blog post</a>
+        </header>
+        <div class="textbox">
+            <h2>Blog Posts:</h2>
+            <ul>
+                {% for post in data %}
+                <li>{{ post[0] }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

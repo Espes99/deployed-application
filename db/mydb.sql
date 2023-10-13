@@ -1,0 +1,10 @@
+USE db;
+
+CREATE TABLE blog_db (
+    id INT NOT NULL AUTO_INCREMENT,
+    blogpost VARCHAR(250),
+    PRIMARY KEY (id)
+);
+
+INSERT INTO blog_db (blogpost) VALUES ('Initilization blog post! WE HAVE CREATED A BLOG APP. WE HVE DEPLOYED USIN JYUBERNETED ANSD DOCKER');
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Blog Post</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Blog Post</h1>
+        <form method="post">
+            <input class="textbox" type="text" name="blogpost" placeholder="Enter your blog post">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
